@@ -61,3 +61,54 @@ Got it! Here are the key concepts and resources you should study to effectively 
 - Consistently practice and review different types of sliding window problems to solidify your understanding. 
 
 By focusing on these concepts and using the provided resources, you'll be well-equipped to solve sliding window problems effectively. Happy learning!
+
+
+Here is a list of beginner-friendly sliding window problems on LeetCode, sorted to help you understand the concept step-by-step:
+
+### 1. **Maximum Average Subarray I**
+   - **Description**: Find the contiguous subarray of a given length `k` that has the maximum average value.
+   - **Link**: [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+
+### 2. **Find All Anagrams in a String**
+   - **Description**: Given a string `s` and a non-empty string `p`, find all the start indices of `p`'s anagrams in `s`.
+   - **Link**: [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+
+### 3. **Longest Substring Without Repeating Characters**
+   - **Description**: Given a string, find the length of the longest substring without repeating characters.
+   - **Link**: [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
+### 4. **Minimum Size Subarray Sum**
+   - **Description**: Given an array of positive integers `nums` and a positive integer `target`, find the minimal length of a contiguous subarray of which the sum is greater than or equal to `target`. If there is no such subarray, return 0 instead.
+   - **Link**: [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+
+### 5. **Permutation in String**
+   - **Description**: Given two strings `s1` and `s2`, return true if `s2` contains a permutation of `s1`, or false otherwise.
+   - **Link**: [Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+
+### 6. **Longest Repeating Character Replacement**
+   - **Description**: You are given a string `s` and an integer `k`. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most `k` times. Return the length of the longest substring containing the same letter you can get after performing the above operations.
+   - **Link**: [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
+
+### 7. **Sliding Window Maximum**
+   - **Description**: You are given an array of integers `nums`, there is a sliding window of size `k` which is moving from the very left of the array to the very right. You can only see the `k` numbers in the window. Each time the sliding window moves right by one position. Return the max sliding window.
+   - **Link**: [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/)
+
+### 8. **Subarrays with K Different Integers**
+   - **Description**: Given an integer array `A` and an integer `K`, find the number of good subarrays of `A`. A good array is defined as an array that contains exactly `K` different integers.
+   - **Link**: [Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/)
+
+### 9. **Longest Substring with At Most K Distinct Characters**
+   - **Description**: Given a string, find the length of the longest substring that contains at most `K` distinct characters.
+   - **Link**: [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
+
+### 10. **Longest Subarray of 1's After Deleting One Element**
+   - **Description**: Given a binary array `nums`, you should delete one element from it. Return the size of the longest non-empty subarray containing only 1's in the resulting array.
+   - **Link**: [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
+
+### Study Tips:
+1. **Understand the Concept**: Start with the first problem and make sure you understand how the sliding window technique works.
+2. **Incremental Difficulty**: Progress through the list as you become more comfortable with each problem.
+3. **Practice Writing Code**: Implement each solution on your own to solidify your understanding.
+4. **Analyze Different Scenarios**: Try different inputs and edge cases to see how your solution performs.
+
+Happy coding!
