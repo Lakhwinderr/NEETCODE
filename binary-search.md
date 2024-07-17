@@ -15,7 +15,7 @@ To solve these binary search questions, you need a good understanding of the bin
    - If `nums[mid]` is less than the target, update `left` to `mid + 1`.
    - If `nums[mid]` is greater than the target, update `right` to `mid - 1`.
 3. If the target is not found, return -1.
-
+4. Check this solution to understand the logic better: [Leetcode Solution](https://leetcode.com/problems/binary-search/solutions/423162/binary-search-101/)
 ### 2. Search in a 2D Matrix
 **Problem**: Given a matrix where each row is sorted and the first integer of each row is greater than the last integer of the previous row, determine if a target value exists in the matrix.
 
@@ -44,6 +44,7 @@ To solve these binary search questions, you need a good understanding of the bin
 
 ### 4. Find Minimum in Rotated Sorted Array
 **Problem**: Given a rotated sorted array, find the minimum element.
+- Couldn't solve the question using right biased mid point, Why?? Ask the mentors
 
 #### Key Concepts:
 - **Binary Search on Rotated Array**: Use modified binary search to find the pivot point.
