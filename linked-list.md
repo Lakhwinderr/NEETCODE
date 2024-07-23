@@ -68,6 +68,8 @@ To help you study and understand linked lists in JavaScript, here are some key c
    - Use a dummy node to build the new list.
    - Compare the nodes of both lists one by one and link the smaller node to the merged list.
 
+   -use dummy node in above questions
+
 3. **Reorder List**:
    - Use a slow and fast pointer to find the middle of the list.
    - Reverse the second half of the list.
@@ -87,6 +89,91 @@ To help you study and understand linked lists in JavaScript, here are some key c
 7. **Detect Cycle in a Linked List**:
    - Use a slow and fast pointer.
    - If they meet, there is a cycle; otherwise, the list is acyclic.
+
+### Floyd’s Tortoise and Hare (Cycle Detection) Algorithm
+
+#### Overview:
+Floyd’s Tortoise and Hare algorithm is a pointer algorithm used to detect cycles in a linked list. It uses two pointers that move at different speeds to determine whether a cycle exists.
+
+#### Key Concepts:
+1. **Slow Pointer**: Moves one step at a time.
+2. **Fast Pointer**: Moves two steps at a time.
+
+#### Steps:
+
+1. **Initialization**:
+   - Initialize `slow` and `fast` pointers to the head of the linked list.
+
+2. **Traversal**:
+   - Move the `slow` pointer by one step.
+   - Move the `fast` pointer by two steps.
+
+3. **Cycle Detection**:
+   - If `fast` becomes `null` or `fast.next` becomes `null`, it means there is no cycle in the list, so return `false`.
+   - If `slow` and `fast` pointers meet at any point, it indicates there is a cycle in the list, so return `true`.
+
+#### Example Code:
+
+```javascript
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */
+
+/**
+ * @param {ListNode} head
+ * @return {boolean}
+ */
+var hasCycle = function(head) {
+    if (!head) {
+        return false;  // Return false for an empty list
+    }
+
+    let slow = head;
+    let fast = head;
+
+    while (fast !== null && fast.next !== null) {
+        fast = fast.next.next;
+        slow = slow.next;
+        if (fast === slow) {
+            return true;  // Cycle detected
+        }
+    }
+    
+    return false;  // No cycle detected
+};
+```
+
+#### Example Usage:
+
+```javascript
+// Test case: empty list
+console.log(hasCycle(null));  // Expected output: false
+
+// Test case: no cycle
+let head = new ListNode(1);
+head.next = new ListNode(2);
+head.next.next = new ListNode(3);
+console.log(hasCycle(head));  // Expected output: false
+
+// Test case: cycle exists
+let cycleHead = new ListNode(1);
+cycleHead.next = new ListNode(2);
+cycleHead.next.next = new ListNode(3);
+cycleHead.next.next.next = cycleHead.next;  // Creates a cycle
+console.log(hasCycle(cycleHead));  // Expected output: true
+```
+
+#### Key Points:
+
+- **Time Complexity**: O(n), where n is the number of nodes in the linked list.
+- **Space Complexity**: O(1), constant space usage since no additional data structures are used.
+- **Use Cases**: Cycle detection in linked lists, finding loops in data structures.
+
+This algorithm is efficient and commonly used for detecting cycles in linked lists due to its simplicity and low space complexity.
 
 8. **Find the Duplicate Number**:
    - Use the Floyd’s Tortoise and Hare (Cycle Detection) algorithm.
